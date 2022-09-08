@@ -24,5 +24,13 @@
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_loadingFragment"
+            app:destination="@id/loadingFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/loadingFragment"
+        android:name="com.example.vitals.LoadingFragment"
+        android:label="Processig"
+        tools:layout="@layout/fragment_loading" />
 </navigation>

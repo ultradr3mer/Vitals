@@ -52,7 +52,7 @@ class SecondFragment : Fragment() {
     }
 
     private fun onTapTapDetected() {
-        Log.i("MainActivity", "Tap Detected")
+        findNavController().navigate(R.id.action_SecondFragment_to_loadingFragment)
     }
 
     private fun initSensorObject() {
@@ -71,10 +71,8 @@ class SecondFragment : Fragment() {
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-
         _binding = FragmentSecondBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
